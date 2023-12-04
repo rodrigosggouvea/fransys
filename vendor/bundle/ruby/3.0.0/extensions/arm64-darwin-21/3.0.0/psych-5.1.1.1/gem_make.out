@@ -1,0 +1,24 @@
+current directory: /Users/rgouvea/workspace/fransys/vendor/bundle/ruby/3.0.0/gems/psych-5.1.1.1/ext/psych
+/Users/rgouvea/.rvm/rubies/ruby-3.0.0/bin/ruby -I /Users/rgouvea/.rvm/rubies/ruby-3.0.0/lib/ruby/3.0.0 -r ./siteconf20231204-18485-vho32t.rb extconf.rb
+checking for yaml.h... yes
+checking for yaml_get_version() in -lyaml... yes
+creating Makefile
+
+current directory: /Users/rgouvea/workspace/fransys/vendor/bundle/ruby/3.0.0/gems/psych-5.1.1.1/ext/psych
+make "DESTDIR=" clean
+cd libyaml && /Library/Developer/CommandLineTools/usr/bin/make clean
+/bin/sh: line 0: cd: libyaml: No such file or directory
+make: [clean-so] Error 1 (ignored)
+
+current directory: /Users/rgouvea/workspace/fransys/vendor/bundle/ruby/3.0.0/gems/psych-5.1.1.1/ext/psych
+make "DESTDIR="
+compiling psych.c
+compiling psych_emitter.c
+compiling psych_parser.c
+compiling psych_to_ruby.c
+compiling psych_yaml_tree.c
+linking shared-object psych.bundle
+
+current directory: /Users/rgouvea/workspace/fransys/vendor/bundle/ruby/3.0.0/gems/psych-5.1.1.1/ext/psych
+make "DESTDIR=" install
+/Users/rgouvea/homebrew/opt/coreutils/bin/ginstall -c -m 0755 psych.bundle ./.gem.20231204-18485-tldua5

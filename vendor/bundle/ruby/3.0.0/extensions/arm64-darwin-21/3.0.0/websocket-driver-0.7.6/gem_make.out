@@ -1,0 +1,15 @@
+current directory: /Users/rgouvea/workspace/fransys/vendor/bundle/ruby/3.0.0/gems/websocket-driver-0.7.6/ext/websocket-driver
+/Users/rgouvea/.rvm/rubies/ruby-3.0.0/bin/ruby -I /Users/rgouvea/.rvm/rubies/ruby-3.0.0/lib/ruby/3.0.0 -r ./siteconf20231204-18485-atltfk.rb extconf.rb
+creating Makefile
+
+current directory: /Users/rgouvea/workspace/fransys/vendor/bundle/ruby/3.0.0/gems/websocket-driver-0.7.6/ext/websocket-driver
+make "DESTDIR=" clean
+
+current directory: /Users/rgouvea/workspace/fransys/vendor/bundle/ruby/3.0.0/gems/websocket-driver-0.7.6/ext/websocket-driver
+make "DESTDIR="
+compiling websocket_mask.c
+linking shared-object websocket_mask.bundle
+
+current directory: /Users/rgouvea/workspace/fransys/vendor/bundle/ruby/3.0.0/gems/websocket-driver-0.7.6/ext/websocket-driver
+make "DESTDIR=" install
+/Users/rgouvea/homebrew/opt/coreutils/bin/ginstall -c -m 0755 websocket_mask.bundle ./.gem.20231204-18485-x4eee2
