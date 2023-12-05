@@ -76,6 +76,7 @@ GEM
       mutex_m
       tzinfo (~> 2.0)
     base64 (0.2.0)
+    bcrypt (3.1.20)
     bigdecimal (3.1.4)
     bindex (0.8.1)
     bootsnap (1.17.0)
@@ -95,6 +96,11 @@ GEM
     ffaker (2.23.0)
     globalid (1.2.1)
       activesupport (>= 6.1)
+    graphiql-rails (1.9.0)
+      railties
+      sprockets-rails
+    graphql (2.1.7)
+      racc (~> 1.4)
     i18n (1.14.1)
       concurrent-ruby (~> 1.0)
     io-console (0.6.0)
@@ -242,9 +248,12 @@ PLATFORMS
   x86_64-linux
 
 DEPENDENCIES
+  bcrypt
   bootsnap
   cssbundling-rails
   ffaker
+  graphiql-rails
+  graphql
   jbuilder
   jsbundling-rails
   pg (~> 1.1)
