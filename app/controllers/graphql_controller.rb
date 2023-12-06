@@ -22,7 +22,7 @@ class GraphqlController < ApplicationController
   def context
     {
       session: session,
-      current_user: AuthToken.user_from_token(session[:token])
+      current_professional: AuthToken.professional_from_token(session[:token])
     }
   end
 

@@ -4,21 +4,21 @@ module Mutations
   class UpsertAppointment < BaseMutation
 
     argument :id, ID, required: false
-    argument :company_id, ID, required: true
-    argument :professional_id, ID, required: true
     argument :client_id, ID, required: true
+    argument :professional_id, ID, required: true
     argument :scheduled_at, GraphQL::Types::ISO8601Date, required: true
 
     type Types::AppointmentType
 
     def resolve(
       id: nil,
-      company_id: nil,
-      professional_id: nil,
       client_id: nil,
+      professional_id: nil,
       scheduled_at: nil
     )
-      company = Company.find(company_id)
+      validate_logged_in_professional
+
+      company = context[:current_professional].company
 
       appointment = id.present? ? company.appointments.find(id) : company.appointments.build
 
